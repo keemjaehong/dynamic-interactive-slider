@@ -4826,7 +4826,15 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
+    border: 18px solid transparent;
+    border-radius: 8px;
+    transition: border .3s;
+    overflow: hidden;
     cursor: pointer;
+}
+
+.card-inner:hover {
+    border-color: #05D16E;
 }
 
 .modal-w {

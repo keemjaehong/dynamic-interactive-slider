@@ -1,0 +1,24 @@
+.cursor-item {
+    position: fixed;
+    left: 20px;
+    display: none;
+    align-items: center;
+    transform-origin: 0%;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.cursor {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    padding: 0 25px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 60px;
+    background-color: #05D16E;
+    white-space: nowrap;
+    z-index: 999;
+}

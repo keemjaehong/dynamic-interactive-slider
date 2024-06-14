@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video overlay</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/story.css">
+    <link rel="stylesheet" href="css/cursor.css">
+</head>
+
+<body>
+
+    <section id="story">
+        <div class="cursor-item">
+            <div class="cursor">
+                <div data-cursor-text=""></div>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="container-txt">
+                <h3>세상 모든 HR 이야기를<br>에이치닷에서.</h3>
+                <p>실제 성과를 이루고 있는 실제 회원들의 감동적인 이야기를 들어보세요</p>
+            </div>
+            <div data-cards-wrap="" class="story-card__wrap swiper">
+                <div role="list" class="story-cards__list swiper-wrapper">
+                    <div data-card="테스트 카드 테스트 카드 #1" role="listitem" class="story-card swiper-slide">
+                        <div aria-label="테스트 카드 테스트 카드 #1" class="card-inner">
+                            <img src="src/thumb_main_story_1.jpg" alt="" class="thumb" />
+                        </div>
+                    </div>
+                    <div data-card="테스트 카드 #2" role="listitem" class="story-card swiper-slide">
+                        <div aria-label="테스트 카드 #2" class="card-inner">
+                            <img src="src/thumb_main_story_2.jpg" alt="" class="thumb" />
+                        </div>
+                    </div>
+                    <div data-card="테스트 카드 #3" role="listitem" class="story-card swiper-slide">
+                        <div aria-label="테스트 카드 #3" data-overlay-open="" class="card-inner">
+                            <img src="src/thumb_main_story_3.jpg" alt="" class="thumb" />
+                        </div>
+                    </div>
+                    <div data-card="테스트 카드 테스트 카드#4" role="listitem" class="story-card swiper-slide">
+                        <div aria-label="테스트 카드 테스트 카드#4" data-overlay-open="" class="card-inner">
+                            <img src="src/thumb_main_story_4.jpg" alt="" class="thumb" />
+                        </div>
+                    </div>
+                    <div data-card="테스트 카드 #5" role="listitem" class="story-card swiper-slide">
+                        <div aria-label="테스트 카드 #5" class="card-inner">
+                            <img src="src/thumb_main_story_5.jpg" alt="" class="thumb" />
+                        </div>
+                    </div>
+                    <div data-card="테스트 카드 테스트 카드 #6" role="listitem" class="story-card swiper-slide">
+                        <div aria-label="테스트 카드 테스트 카드 #6" class="card-inner">
+                            <img src="src/thumb_main_story_6.jpg" alt="" class="thumb" />
+                        </div>
+                    </div>
+                    <div data-card="테스트 카드 테스트 카드 #7" role="listitem" class="story-card swiper-slide">
+                        <div aria-label="테스트 카드 테스트 카드 #7" class="card-inner">
+                            <img src="src/thumb_main_story_7.jpg" alt="" class="thumb" />
+                        </div>
+                    </div>
+                    <div data-card="테스트 카드 #8" role="listitem" class="story-card swiper-slide">
+                        <div aria-label="테스트 카드 #8" class="card-inner">
+                            <img src="src/thumb_main_story_8.jpg" alt="" class="thumb" />
+                        </div>
+                    </div>
+                    <div data-card="테스트 카드 #9" role="listitem" class="story-card swiper-slide">
+                        <div aria-label="테스트 카드 #9" class="card-inner">
+                            <img src="src/thumb_main_story_9.jpg" alt="" class="thumb" />
+                        </div>
+                    </div>
+                    <div data-card="테스트 카드 테스트 카드 #10" role="listitem" class="story-card swiper-slide">
+                        <div aria-label="테스트 카드 테스트 카드 #10" class="card-inner">
+                            <img src="src/thumb_main_story_10.jpg" alt="" class="thumb" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-wrap">
+            <div data-overlay-close="" class="overlay-bg"></div>
+            <div class="overlay-inner">
+                <div aria-label="close overlay modal" data-overlay-close="" class="overlay-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5.25 5.25L12 12M12 12L5.25 18.75M12 12L18.75 18.75M12 12L18.75 5.25" stroke="#6B7280"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div role="list" class="overlay-list ">
+                    <div data-overlay-name="Andrea" role="listitem" class="overlay-item">
+                        <div data-video-controls="" data-overlay-vid class="overlay-vid__wrap">
+                            <video width="100%" height="100%"
+                                src="https://d1pwidzl9kib4u.cloudfront.net/marketing/20240305/4x3_Low_Quality_Low_Captions/20240304_Fruitful_Guide_4x3_Andrea_sm_locap.mp4"
+                                loop="" playsinline="true" class="video"></video>
+                            <div class="overlay sound-icon">
+                                <div aria-label="toggle sound" class="sound-button-icon muted">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" class="svg-icon play">
+                                        <rect width="24" height="24" fill="white" fill-opacity="0.01"
+                                            style="mix-blend-mode:multiply" />
+                                        <path
+                                            d="M20.37 6.06091L19.2225 7.02841C20.4014 8.42486 21.0298 10.2037 20.9898 12.0308C20.9497 13.8579 20.2439 15.6075 19.005 16.9509L20.1075 18.0009C21.5952 16.3888 22.443 14.2887 22.4913 12.0956C22.5396 9.90237 21.7853 7.76704 20.37 6.09091V6.06091Z"
+                                            fill="#161616" />
+                                        <path
+                                            d="M16.185 9.00091C16.8921 9.83942 17.2687 10.9073 17.2438 12.0039C17.2189 13.1005 16.7944 14.1503 16.05 14.9559L17.1525 15.9759C18.1447 14.9007 18.7098 13.5 18.7415 12.0373C18.7733 10.5746 18.2695 9.15069 17.325 8.03341L16.185 9.00091Z"
+                                            fill="#161616" />
+                                        <path
+                                            d="M13.5 22.5009C13.4008 22.5005 13.3026 22.4804 13.2112 22.4418C13.1198 22.4032 13.037 22.3468 12.9675 22.2759L7.2525 16.5009H2.25C2.05109 16.5009 1.86032 16.4219 1.71967 16.2812C1.57902 16.1406 1.5 15.9498 1.5 15.7509V8.25091C1.5 8.05199 1.57902 7.86123 1.71967 7.72058C1.86032 7.57992 2.05109 7.50091 2.25 7.50091H7.2525L12.9675 1.72591C13.108 1.58622 13.2981 1.50781 13.4963 1.50781C13.6944 1.50781 13.8845 1.58622 14.025 1.72591C14.1663 1.86438 14.2472 2.05308 14.25 2.25091V21.7509C14.25 21.9498 14.171 22.1406 14.0303 22.2812C13.8897 22.4219 13.6989 22.5009 13.5 22.5009ZM3 15.0009H7.56C7.65923 15.0013 7.75739 15.0214 7.8488 15.06C7.94021 15.0987 8.02304 15.155 8.0925 15.2259L12.75 19.9284V4.07341L8.0925 8.77591C8.02304 8.84677 7.94021 8.90315 7.8488 8.94177C7.75739 8.9804 7.65923 9.0005 7.56 9.00091H3V15.0009Z"
+                                            fill="#161616" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none" class="svg-icon mute">
+                                        <rect width="24" height="24" transform="translate(0.226562)" fill="white"
+                                            fill-opacity="0.01" style="mix-blend-mode:multiply" />
+                                        <path
+                                            d="M23.4766 9.30841L22.4191 8.25091L19.7266 10.9434L17.0341 8.25091L15.9766 9.30841L18.6691 12.0009L15.9766 14.6934L17.0341 15.7509L19.7266 13.0584L22.4191 15.7509L23.4766 14.6934L20.7841 12.0009L23.4766 9.30841Z"
+                                            fill="#161616" />
+                                        <path
+                                            d="M13.7266 22.5009C13.6273 22.5005 13.5292 22.4804 13.4378 22.4418C13.3464 22.4032 13.2635 22.3468 13.1941 22.2759L7.47906 16.5009H2.47656C2.27765 16.5009 2.08688 16.4219 1.94623 16.2812C1.80558 16.1406 1.72656 15.9498 1.72656 15.7509V8.25091C1.72656 8.05199 1.80558 7.86123 1.94623 7.72058C2.08688 7.57992 2.27765 7.50091 2.47656 7.50091H7.47906L13.1941 1.72591C13.3346 1.58622 13.5247 1.50781 13.7228 1.50781C13.921 1.50781 14.111 1.58622 14.2516 1.72591C14.3929 1.86438 14.4737 2.05308 14.4766 2.25091V21.7509C14.4766 21.9498 14.3975 22.1406 14.2569 22.2812C14.1162 22.4219 13.9255 22.5009 13.7266 22.5009ZM3.22656 15.0009H7.72656C7.9452 14.9995 8.15649 15.0797 8.31906 15.2259L12.9766 19.9284V4.07341L8.31906 8.77591C8.15649 8.9221 7.9452 9.00234 7.72656 9.00091H3.22656V15.0009Z"
+                                            fill="#161616" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="overlay play-button">
+                                <div class="play-button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="96"
+                                        height="96" viewBox="0 0 96 96" fill="none">
+                                        <rect width="96" height="96" rx="48" fill="#1F2937" fill-opacity="0.9"
+                                            style="mix-blend-mode:multiply" />
+                                        <path
+                                            d="M37.6841 65.4124C37.2789 65.4124 36.8903 65.2447 36.6038 64.9463C36.3172 64.6478 36.1563 64.243 36.1563 63.8209V28.8065C36.1562 28.5299 36.2254 28.2581 36.357 28.0179C36.4885 27.7776 36.6779 27.5772 36.9064 27.4364C37.135 27.2957 37.3948 27.2194 37.6603 27.215C37.9258 27.2107 38.1877 27.2786 38.4204 27.4118L68.9776 44.919C69.2174 45.0563 69.4173 45.2582 69.5566 45.5035C69.6958 45.7488 69.7693 46.0286 69.7693 46.3136C69.7693 46.5986 69.6958 46.8784 69.5566 47.1237C69.4173 47.369 69.2174 47.5709 68.9776 47.7082L38.4204 65.2154C38.1948 65.3446 37.9415 65.4124 37.6841 65.4124Z"
+                                            fill="#D1D5DB" />
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="overlay-item__text">
+                            <div class="overlay-text__wrap">
+                                <h4 data-overlay-fade="">테스트 카드 #3</h4>
+                                <p data-overlay-fade="" class="description">11실제 성과를 이루고 있는 실제 회원들의 감동적인 이야기를 들어보세요실제
+                                    성과를
+                                    이루고 있는 실제 회원들의 감동적인 이야기를 들어보세요실제 성과를 이루고 있는 실제 회원들의 감동적인 이야기를 들어보세요.11</p>
+                            </div>
+                            <div class="tags" role="list">
+                                <span data-overlay-tag="" role="listitem" class="tag">#채용</span>
+                                <span data-overlay-tag="" role="listitem" class="tag">#역량검사</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-overlay-name="Andrew" role="listitem" class="overlay-item">
+                        <div data-video-controls="" data-overlay-vid class="overlay-vid__wrap">
+                            <video width="100%" height="100%"
+                                src="https://d1pwidzl9kib4u.cloudfront.net/marketing/20240305/4x3_Low_Quality_Low_Captions/20240304_Fruitful_Guide_4x3_Andrew_sm_locap.mp4"
+                                loop="" playsinline="true" class="video"></video>
+                            <div class="overlay sound-icon">
+                                <div aria-label="toggle sound" class="sound-button-icon muted">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" class="svg-icon play">
+                                        <rect width="24" height="24" fill="white" fill-opacity="0.01"
+                                            style="mix-blend-mode:multiply" />
+                                        <path
+                                            d="M20.37 6.06091L19.2225 7.02841C20.4014 8.42486 21.0298 10.2037 20.9898 12.0308C20.9497 13.8579 20.2439 15.6075 19.005 16.9509L20.1075 18.0009C21.5952 16.3888 22.443 14.2887 22.4913 12.0956C22.5396 9.90237 21.7853 7.76704 20.37 6.09091V6.06091Z"
+                                            fill="#161616" />
+                                        <path
+                                            d="M16.185 9.00091C16.8921 9.83942 17.2687 10.9073 17.2438 12.0039C17.2189 13.1005 16.7944 14.1503 16.05 14.9559L17.1525 15.9759C18.1447 14.9007 18.7098 13.5 18.7415 12.0373C18.7733 10.5746 18.2695 9.15069 17.325 8.03341L16.185 9.00091Z"
+                                            fill="#161616" />
+                                        <path
+                                            d="M13.5 22.5009C13.4008 22.5005 13.3026 22.4804 13.2112 22.4418C13.1198 22.4032 13.037 22.3468 12.9675 22.2759L7.2525 16.5009H2.25C2.05109 16.5009 1.86032 16.4219 1.71967 16.2812C1.57902 16.1406 1.5 15.9498 1.5 15.7509V8.25091C1.5 8.05199 1.57902 7.86123 1.71967 7.72058C1.86032 7.57992 2.05109 7.50091 2.25 7.50091H7.2525L12.9675 1.72591C13.108 1.58622 13.2981 1.50781 13.4963 1.50781C13.6944 1.50781 13.8845 1.58622 14.025 1.72591C14.1663 1.86438 14.2472 2.05308 14.25 2.25091V21.7509C14.25 21.9498 14.171 22.1406 14.0303 22.2812C13.8897 22.4219 13.6989 22.5009 13.5 22.5009ZM3 15.0009H7.56C7.65923 15.0013 7.75739 15.0214 7.8488 15.06C7.94021 15.0987 8.02304 15.155 8.0925 15.2259L12.75 19.9284V4.07341L8.0925 8.77591C8.02304 8.84677 7.94021 8.90315 7.8488 8.94177C7.75739 8.9804 7.65923 9.0005 7.56 9.00091H3V15.0009Z"
+                                            fill="#161616" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none" class="svg-icon mute">
+                                        <rect width="24" height="24" transform="translate(0.226562)" fill="white"
+                                            fill-opacity="0.01" style="mix-blend-mode:multiply" />
+                                        <path
+                                            d="M23.4766 9.30841L22.4191 8.25091L19.7266 10.9434L17.0341 8.25091L15.9766 9.30841L18.6691 12.0009L15.9766 14.6934L17.0341 15.7509L19.7266 13.0584L22.4191 15.7509L23.4766 14.6934L20.7841 12.0009L23.4766 9.30841Z"
+                                            fill="#161616" />
+                                        <path
+                                            d="M13.7266 22.5009C13.6273 22.5005 13.5292 22.4804 13.4378 22.4418C13.3464 22.4032 13.2635 22.3468 13.1941 22.2759L7.47906 16.5009H2.47656C2.27765 16.5009 2.08688 16.4219 1.94623 16.2812C1.80558 16.1406 1.72656 15.9498 1.72656 15.7509V8.25091C1.72656 8.05199 1.80558 7.86123 1.94623 7.72058C2.08688 7.57992 2.27765 7.50091 2.47656 7.50091H7.47906L13.1941 1.72591C13.3346 1.58622 13.5247 1.50781 13.7228 1.50781C13.921 1.50781 14.111 1.58622 14.2516 1.72591C14.3929 1.86438 14.4737 2.05308 14.4766 2.25091V21.7509C14.4766 21.9498 14.3975 22.1406 14.2569 22.2812C14.1162 22.4219 13.9255 22.5009 13.7266 22.5009ZM3.22656 15.0009H7.72656C7.9452 14.9995 8.15649 15.0797 8.31906 15.2259L12.9766 19.9284V4.07341L8.31906 8.77591C8.15649 8.9221 7.9452 9.00234 7.72656 9.00091H3.22656V15.0009Z"
+                                            fill="#161616" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="overlay play-button">
+                                <div class="play-button-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96"
+                                        fill="none">
+                                        <rect width="96" height="96" rx="48" fill="#1F2937" fill-opacity="0.9"
+                                            style="mix-blend-mode:multiply" />
+                                        <path
+                                            d="M37.6841 65.4124C37.2789 65.4124 36.8903 65.2447 36.6038 64.9463C36.3172 64.6478 36.1563 64.243 36.1563 63.8209V28.8065C36.1562 28.5299 36.2254 28.2581 36.357 28.0179C36.4885 27.7776 36.6779 27.5772 36.9064 27.4364C37.135 27.2957 37.3948 27.2194 37.6603 27.215C37.9258 27.2107 38.1877 27.2786 38.4204 27.4118L68.9776 44.919C69.2174 45.0563 69.4173 45.2582 69.5566 45.5035C69.6958 45.7488 69.7693 46.0286 69.7693 46.3136C69.7693 46.5986 69.6958 46.8784 69.5566 47.1237C69.4173 47.369 69.2174 47.5709 68.9776 47.7082L38.4204 65.2154C38.1948 65.3446 37.9415 65.4124 37.6841 65.4124Z"
+                                            fill="#D1D5DB" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay-item__text">
+                            <div class="overlay-text__wrap">
+                                <h4 data-overlay-fade="">테스트 카드 #4</h4>
+                                <p data-overlay-fade="" class="description">22실제 성과를 이루고 있는 실제 회원들의 감동적인 이야기를 들어보세요실제
+                                    성과를
+                                    이루고 있는 실제 회원들의 감동적인 이야기를 들어보세요실제 성과를 이루고 있는 실제 회원들의 감동적인 이야기를 들어보세요.22</p>
+                            </div>
+                            <div class="tags" role="list">
+                                <span data-overlay-tag="" role="listitem" class="tag">#TEST1</span>
+                                <span data-overlay-tag="" role="listitem" class="tag">#TEST2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay-nav">
+                    <div data-overlay-prev="" class="overlay-btn is--prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect width="24" height="24" fill="white" fill-opacity="0.01"
+                                style="mix-blend-mode:multiply" />
+                            <path
+                                d="M10.5 19.5L11.5575 18.4425L5.8725 12.75H21V11.25H5.8725L11.5575 5.5575L10.5 4.5L3 12L10.5 19.5Z"
+                                fill="#1F2937" />
+                        </svg>
+                        <span>이전</span>
+                    </div>
+                    <div class="overlay-links">
+                        <a href="#none" class="link-story">성공 스토리 보러가기</a>
+                        <a href="#none" class="link-starter">H. STARTER 무료로 시작하기</a>
+                    </div>
+                    <div data-overlay-next="" class="overlay-btn is--next">
+                        <span>다음</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect width="24" height="24" fill="white" fill-opacity="0.01"
+                                style="mix-blend-mode:multiply" />
+                            <path
+                                d="M13.5 4.5L12.4275 5.54475L18.1125 11.25H3V12.75H18.1125L12.4275 18.4298L13.5 19.5L21 12L13.5 4.5Z"
+                                fill="#1F2937" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/dynamicCursor.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/videoOverlay.js"></script>
+
+</html>

@@ -1,0 +1,330 @@
+/* STORY */
+#story {
+    width: 100%;
+    overflow: hidden;
+}
+
+#story .inner {
+    margin: 0 auto;
+    padding: 320px 0 180px;
+}
+
+#story .container-txt {
+    display: flex;
+    flex-flow: column;
+    row-gap: 40px;
+    text-align: center;
+}
+
+#story .container-txt h3 {
+    font-size: 80px;
+    font-weight: 600;
+    color: #111827;
+    line-height: 120%;
+}
+
+#story .container-txt p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #374151;
+    line-height: 150%;
+}
+
+#story .story-card__wrap {
+    margin-top: 120px;
+    overflow: visible;
+}
+
+#story .story-card {
+    position: relative;
+    width: 432px;
+    height: auto;
+    max-height: 484px;
+    aspect-ratio: 3 / 3.368;
+    border-radius: 8px;
+    box-shadow: 0px 14px 34px -6px rgba(0, 0, 0, 0.16), 0px 2px 14px 0px rgba(0, 0, 0, 0.04);
+    background-color: #E5E7EB;
+    transition: background-color .3s;
+}
+
+#story .story-card:hover {
+    background-color: #05D16E
+}
+
+#story .story-card .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 18px solid transparent;
+    border-radius: 8px;
+    transition: border .3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#story .story-card .thumb {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* STORY - overlay */
+#story .overlay-wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100dvh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#story .overlay-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 7, 18, 0.90);
+    z-index: 0;
+    cursor: pointer;
+}
+
+#story .overlay-inner {
+    position: relative;
+    width: 1192px;
+    height: 646px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 24px 24px 48px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+#story .overlay-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#story .overlay-list {
+    position: relative;
+    height: 458px;
+}
+
+#story .overlay-item {
+    display: none;
+    column-gap: 54px;
+}
+
+#story .overlay-item.is--active {
+    display: flex;
+}
+
+#story .overlay-vid__wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#story .overlay-vid__wrap video {
+    position: relative;
+    width: 100%;
+    max-width: 682px;
+    height: auto;
+    max-height: 458px;
+    padding: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#story .overlay.sound-icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#story .sound-button-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 48px;
+    background-color: rgba(249, 250, 251, .35);
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+#story .sound-button-icon.muted .svg-icon.play {
+    display: none;
+}
+
+#story .sound-button-icon .svg-icon.play {
+    display: block;
+}
+
+
+
+#story .sound-button-icon.muted .svg-icon.mute {
+    display: block;
+}
+
+#story .sound-button-icon .svg-icon.mute {
+    display: none;
+}
+
+
+
+#story .overlay.play-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#story .overlay.play-button .play-button-icon {
+    /* -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px); */
+    /* color: var(--color--white); */
+    /* background-color: rgba(255, 255, 255, .2); */
+    border-radius: 96px;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    /* padding: 1rem; */
+    transition: transform .45s cubic-bezier(.175, .885, .32, 1.275);
+    display: flex;
+    transform: scale(0);
+}
+
+#story .overlay.play-button .play-button-icon.active {
+    transform: scale(1);
+}
+
+#story .overlay-item__text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+#story .overlay-text__wrap {
+    display: flex;
+    flex-flow: column;
+    row-gap: 16px;
+}
+
+#story .overlay-item__text h4 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 140%;
+}
+
+#story .overlay-item__text .description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4B5563;
+    line-height: 160%;
+}
+
+#story .overlay-item__text .tags {
+    display: flex;
+    column-gap: 9px;
+}
+
+#story .overlay-item__text .tag {
+    display: flex;
+    width: fit-content;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    color: #05BC63;
+    border-radius: 42px;
+    background-color: #DAF8E9;
+}
+
+
+#story .overlay-nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+}
+
+#story .overlay-nav .overlay-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #374151;
+    cursor: pointer;
+}
+
+
+#story .overlay-nav .overlay-btn.is--next {
+    justify-content: end;
+}
+
+#story .overlay-nav .overlay-links {
+    display: flex;
+    gap: 8px;
+}
+
+#story .overlay-nav .overlay-links a {
+    width: 260px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#story .overlay-nav .overlay-links a.link-story {
+    color: #1F2937;
+    background-color: #F3F4F6;
+}
+
+#story .overlay-nav .overlay-links a.link-starter {
+    color: #fff;
+    background-color: #05D16E;
+}

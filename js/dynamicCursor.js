@@ -13,7 +13,7 @@ function prefersReducedMotion() {
 
 function initCursorAndButtons(e) {
     e = document.querySelector("body");
-    let cursor = document.querySelector(".cursor-item");
+    let cursor = document.querySelector("#story .cursor-item");
     if (!cursor)
         return;
 
@@ -54,13 +54,13 @@ function initCursorAndButtons(e) {
         }
         )),
         document.querySelectorAll("[data-card]").forEach((card => {
-            const cursor = document.querySelector(".cursor-item");
+            const cursor = document.querySelector("#story .cursor-item");
 
             card.addEventListener("mouseenter", (function () {
                 cursor && (cursor.style.display = "flex");
                 const dataCard = this.getAttribute("data-card");
                 if (dataCard) {
-                    const dataCursor = document.querySelector("[data-cursor-text]");
+                    const dataCursor = document.querySelector("#story [data-cursor-text]");
                     dataCursor && (dataCursor.textContent = dataCard)
                 }
             }
@@ -75,6 +75,7 @@ function initCursorAndButtons(e) {
 
 function initGeneral(e) {
     initCursorAndButtons(e)
+    prefersReducedMotion();
 }
 
 initGeneral();
